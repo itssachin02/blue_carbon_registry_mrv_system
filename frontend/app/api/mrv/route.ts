@@ -5,6 +5,8 @@ import Project from "@/models/Project";
 import { getSession } from "@/lib/auth";
 import { z } from "zod";
 
+export const dynamic = 'force-dynamic';
+
 const mrvReportSchema = z.object({
   project: z.string().min(1),
   reportType: z.enum(["baseline", "monitoring", "verification", "annual"]),

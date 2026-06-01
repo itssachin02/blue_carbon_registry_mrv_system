@@ -1,4 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
+
+export const dynamic = 'force-dynamic';
 import connectToDatabase from "@/lib/mongodb";
 import User from "@/models/User";
 import { createSession } from "@/lib/auth";

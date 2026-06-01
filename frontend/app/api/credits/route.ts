@@ -3,6 +3,8 @@ import connectToDatabase from "@/lib/mongodb";
 import CarbonCredit from "@/models/CarbonCredit";
 import { getSession } from "@/lib/auth";
 
+export const dynamic = 'force-dynamic';
+
 // GET all carbon credits
 export async function GET(request: NextRequest) {
   try {

@@ -5,6 +5,8 @@ import MRVReport from "@/models/MRVReport";
 import CarbonCredit from "@/models/CarbonCredit";
 import { getSession } from "@/lib/auth";
 
+export const dynamic = 'force-dynamic';
+
 export async function GET() {
   try {
     const session = await getSession();

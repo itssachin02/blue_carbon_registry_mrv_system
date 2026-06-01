@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
+export const dynamic = 'force-dynamic';
+
 // Hardcoded admin credentials
 const ADMIN_EMAIL = "oceanledgermrv@gmail.com";
 const ADMIN_PASSWORD = "adminaccessmrv@1234";
