@@ -4,6 +4,8 @@ import MRVReport from "@/models/MRVReport";
 import Project from "@/models/Project";
 import { getSession } from "@/lib/auth";
 
+export const dynamic = 'force-dynamic';
+
 // GET single MRV report
 export async function GET(
   request: NextRequest,

@@ -5,6 +5,8 @@ import Project from "@/models/Project";
 import { getSession } from "@/lib/auth";
 import { z } from "zod";
 
+export const dynamic = 'force-dynamic';
+
 const reviewSchema = z.object({
   action: z.enum(["approve", "reject"]),
   notes: z.string().max(1000).optional(),

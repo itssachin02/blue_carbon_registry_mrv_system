@@ -4,6 +4,8 @@ import CarbonCredit from "@/models/CarbonCredit";
 import { getSession } from "@/lib/auth";
 import { z } from "zod";
 
+export const dynamic = 'force-dynamic';
+
 const retireSchema = z.object({
   quantity: z.number().min(1),
   purpose: z.string().min(1).max(500),

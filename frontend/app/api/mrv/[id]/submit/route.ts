@@ -3,6 +3,8 @@ import connectToDatabase from "@/lib/mongodb";
 import MRVReport from "@/models/MRVReport";
 import { getSession } from "@/lib/auth";
 
+export const dynamic = 'force-dynamic';
+
 // POST submit MRV report for review
 export async function POST(
   request: NextRequest,

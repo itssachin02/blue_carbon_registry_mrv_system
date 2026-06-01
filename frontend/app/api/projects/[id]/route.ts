@@ -4,6 +4,8 @@ import Project from "@/models/Project";
 import { getSession } from "@/lib/auth";
 import { z } from "zod";
 
+export const dynamic = 'force-dynamic';
+
 const updateProjectSchema = z.object({
   name: z.string().min(1).max(100).optional(),
   description: z.string().min(1).max(2000).optional(),

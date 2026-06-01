@@ -5,6 +5,8 @@ import User from "@/models/User";
 import { getSession } from "@/lib/auth";
 import { z } from "zod";
 
+export const dynamic = 'force-dynamic';
+
 const transferSchema = z.object({
   recipientEmail: z.string().email(),
   quantity: z.number().min(1),

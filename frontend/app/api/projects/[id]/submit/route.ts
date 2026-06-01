@@ -3,6 +3,8 @@ import connectToDatabase from "@/lib/mongodb";
 import Project from "@/models/Project";
 import { getSession } from "@/lib/auth";
 
+export const dynamic = 'force-dynamic';
+
 // POST submit project for verification
 export async function POST(
   request: NextRequest,
