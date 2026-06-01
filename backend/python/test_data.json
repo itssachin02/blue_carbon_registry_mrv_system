@@ -1,0 +1,22 @@
+[
+  {
+    "site_id": "SITE001",
+    "habitat_type": "mangrove",
+    "latitude": -6.2,
+    "longitude": 39.1,
+    "area_hectares": 50.5,
+    "carbon_stock_tonnes_per_hectare": 150.0,
+    "measurement_date": "2024-03-15",
+    "uncertainty_percent": 10.0
+  },
+  {
+    "site_id": "SITE002",
+    "habitat_type": "seagrass",
+    "latitude": -7.8,
+    "longitude": 39.3,
+    "area_hectares": 75.2,
+    "carbon_stock_tonnes_per_hectare": 120.0,
+    "measurement_date": "2024-03-20",
+    "uncertainty_percent": 8.5
+  }
+]
